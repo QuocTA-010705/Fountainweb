@@ -2,8 +2,13 @@ body{
     background-color: white;
     margin: 0 auto;
     padding: 0;
-    width: 100vw;
+    width: 100%;
+    overflow-x: hidden;
     min-height: 100vh;
+}
+.html{
+    width: 100%;
+
 }
 .head_container{
     width: 100%;
@@ -23,6 +28,10 @@ body{
     background-size:cover;
     background-position: center -30px;
 } */
+.head{
+    width: 100%;
+    height: auto;
+}
 .head-bar{
     padding: 0 60px;
     display: flex;
@@ -51,8 +60,8 @@ img{
    position: absolute;
    z-index: -1;
    width: 100vw;
-   padding: 0;
-   margin: 0;
+   /* padding: 0;
+   margin: 0; */
    height: 100%;
    object-fit: cover;
    filter: brightness(75%);
@@ -66,11 +75,121 @@ nav ul{
     font-size: 18px;
 
 }
+@media(max-width: 1150px){
+    ul a{
+        text-wrap: nowrap;
+    }
+    nav ul{
+        font-size: 17px;
+        gap: 30px;
+    }
+}
+@media (max-width: 1000px){
+    .title h1{
+        font-size: 45px!important;
+    }
+    .title h2{
+        font-size: 18px!important;
+    }
+    .right-head{
+        display: none!important;
+    }
+    nav ul{
+        display: none;
+    }
+    .head-bar{
+        height: 50px;
+        padding: 0 20px;
+        background-color:white;
+        justify-content: space-between;
+        
+    }
+    .icon_bar{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .user_icon{
+        margin-bottom: 17px;
+        display: block!important;
+    }
+    .logo{
+        margin-left: 190px;
+        margin-top: 0px;
+    }
+    .header-function{
+        gap: 30px!important;
+        height: 70px!important;
+    }
+    .content_m1 h1{
+        padding: 0!important;
+        font-size: 35px!important;
+    }
+    .see_all{
+        font-size: 20px!important;
+    }
+    .main_cards{
+        padding: 0!important;
+    }
+    .img_card img{
+        width: 120px!important;
+        height: 180px!important;
+    }
+
+}
+@media(max-width: 650px) {
+    .logo{
+        margin-left: -100px;
+    }
+    .icon_bar{
+        margin-bottom: 18px;
+    }
+    .title h1{
+        font-size: 30px!important;
+    }
+    .title h2{
+        font-size: 17px!important;
+        letter-spacing: 4px!important;
+    }
+    .title{
+        gap: 40px!important;
+        height: 350px!important;
+    }
+    .header-function{
+        right: -16% !important;
+        width: 70%!important;
+    }
+    .icon{
+        font-size: 17px!important;
+    }
+    .content_m1 h1{
+        font-size: 20px!important;
+    }
+    .img_card img{
+        height: 130px!important;
+        width: 90px!important;
+    }
+    .cards{
+        gap: 10px!important;;
+    }
+    .head-bar{
+        padding: 0;
+    }
+}
+@media(max-width: 450px) {
+    .icon{
+        font-size: 14px!important;
+    }
+    .img_card img{
+        height: 120px!important;
+        width: 80px!important;
+    }
+}
 ul a{
     text-decoration: none;
     color: white;
 }
 .right-head{
+    position: relative;
     margin-right: 40px;
     margin-top: 20px;
     display: flex;
@@ -92,6 +211,17 @@ ul a{
 .button_hover:hover{
     transition: all 0.4s;
     transform: scale(1.2);
+}
+.user_icon{
+    position: relative;
+    display: none;
+    margin-top: 20px;
+    padding: 6px 8px;
+    border: 2px solid #F77E23;
+    /* background-color: #FFE7DB; */
+    border-radius: 100%;
+    color:#F77E23;
+    font-size: 25px;
 }
 
 .title{
@@ -195,6 +325,7 @@ main{
     flex-wrap: wrap;
 }
 .content_m1{
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
