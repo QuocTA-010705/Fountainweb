@@ -134,6 +134,10 @@ nav ul{
         width: 120px!important;
         height: 180px!important;
     }
+    .text{
+        font-size: 15px!important;
+        bottom: 30px!important;
+    }
 
 }
 @media(max-width: 650px) {
@@ -174,6 +178,11 @@ nav ul{
     .head-bar{
         padding: 0;
     }
+    .text{
+        margin-left: -1px!important;
+        font-size: 14px !important;
+        bottom: 28px !important;
+    }
 }
 @media(max-width: 450px) {
     .icon{
@@ -182,6 +191,10 @@ nav ul{
     .img_card img{
         height: 120px!important;
         width: 80px!important;
+    }
+    .text{
+        font-size: 12px !important;
+        bottom: 26px !important;
     }
 }
 ul a{
@@ -392,13 +405,13 @@ main{
     border-radius: 12px;
     filter: brightness(50%);
 }
-div .text{
+.text{
     color: #FFE7DB;
     padding: 5px ;
     margin-left: 10px;
     font-size: 20px;
-    position: absolute;
-    bottom: 10%;
+    position: relative;
+    bottom: 40px;
 }
 .leftArrow{
     position: relative;
