@@ -21,12 +21,18 @@
            <div class="head">
             <img src="./img/backgroundHeader.png" alt="">
             <div class="head-bar">
-            <div class="icon_bar">
-                <i class="fa-solid fa-bars"></i>
+            <div class="icon_bar" id="menu_toggle">
+                <i class="fa-solid fa-bars" id="bars_icon"></i>
+                <i class="fa-solid fa-xmark" id="close_icon"style="display: none;" ></i>
             </div>
-            <div class="logo">Fountain</div>
+            <div class="logo">
+                <div class="deco_logo">
+                <div class="decorate_logo"></div>
+                <div class="decorate_logo"></div>
+                </div>
+                Fountain</div>
             
-            <nav>
+            <nav id="mobile-nav">
                 <ul>
                     <li><a href=""><Span>Home</Span></a></li>
                     <li><a href=""><span>Courses</span></a></li>
@@ -98,6 +104,6 @@
             </div>    
         </div>
     </main>
-    
+    <script src="./index.js"></script>
 </body>
 </html>
