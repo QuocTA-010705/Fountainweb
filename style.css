@@ -385,7 +385,7 @@ main{
 .main_contents{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 40px;
     flex-wrap: wrap;
 }
 .content_m1{
@@ -482,4 +482,76 @@ main{
    left: 9%;
    z-index: 4;
 }
+/*----------------------------Content_m2----------------------- */
+.content_m2{
+    background-color: rgb(242, 233, 222);
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.right_side{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.right_side h1{
+    line-height: 52px;
+    font-size: 50px;
+    font-weight: 600;
+}
+.right_side h1 span{
+    color: #F77E23;
+}
+.right_side h2{
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.left_side {
+    z-index: 1;
+    position: relative;
+}
+.circular_img{
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 3.8px dashed #F77E23;
+    border-radius: 100%;
+    overflow: hidden;
 
+}
+.circular_img img{
+    left: -164px;
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+}
+.enroll_button{
+    width: 130px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 550;
+    background-color: #F77E23;
+}
+.enroll_button:hover{
+    background-color: white;
+    color: #F77E23;
+    transition: all 0.4s ease;
+}
+/* -----------content_m3--------------- */
+.content_m3 h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
