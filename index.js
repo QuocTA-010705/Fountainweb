@@ -17,6 +17,13 @@ document.addEventListener("DOMContentLoaded",function(){
                 closeIcon.style.display = "none";
             }
         })
+    const scroll = document.getElementById("scroll_button");
+    scroll.addEventListener("click", function(){
+        window.scrollTo({
+            top:0,
+            behavior:"smooth"
 
+        });
+    });
 
 })

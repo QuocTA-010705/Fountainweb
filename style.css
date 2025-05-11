@@ -370,7 +370,7 @@ ul a{
     transform: rotate(360deg) scale(1.1);
 }
 .item1, .item2,
-.item3{
+.item3, .item4{
     color: #F77E23;
     background-color: #FFE7DB;
     padding: 8px;
@@ -490,13 +490,13 @@ main{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 70px;
 }
 .right_side{
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
 }
 .right_side h1{
     line-height: 52px;
@@ -547,6 +547,104 @@ main{
     background-color: white;
     color: #F77E23;
     transition: all 0.4s ease;
+}
+.Instructor_blox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    z-index: 4;
+    left: 425px;
+    top: 170px;
+    width: 125px;
+    height: 160px;
+    background-color: white;
+    border-radius: 5px;
+}
+.middle h2{
+    font-size: 20px;
+    text-align: center;
+}
+.middle .oustanding{
+    color: #F77E23;
+}
+.small_img{
+    position: relative;
+    display: flex;
+    margin-bottom: 10px;
+}
+.small_img .circle img{
+    position: relative;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+@media(max-width:1200px){
+    .right_side h1 {
+       font-size: 40px;
+       text-wrap: nowrap;
+    }
+    .right_side h2{
+        font-size: 20px;
+        letter-spacing: 1px;
+        text-wrap: nowrap;
+    }
+}
+@media (max-width:1000px) {
+    .main_cards{
+        height: 40vh;
+    }
+    .content_m2{
+        padding: 50px 0px;
+        flex-wrap: wrap;
+    }
+    .circular_img{
+        margin-left: 0px;
+    }
+    .Instructor_blox{
+        left:330px;
+        top: 176px;
+        width: 115px;
+        height: 160px;
+    }
+    .right_side{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .right_side h1{
+        text-align: center;
+    }
+    .right_side h2{
+        text-align: center;
+    }
+    
+}
+@media (max-width: 650px) {
+    .main_cards{
+        height: 25vh;
+    }
+    .circular_img{
+        width: 330px;
+        height: 330px;
+    }
+    .circular_img img{
+        left:-195px;
+    }
+    .Instructor_blox{
+        left: 242px;
+        top: 160px;
+        width: 110px;
+        height: 145px;
+        gap: 5px;
+    }
+    .middle h2{
+        font-size: 18px;
+    }
+    
 }
 /* -----------content_m3--------------- */
 .content_m3 h1{
