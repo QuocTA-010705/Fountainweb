@@ -5,6 +5,8 @@ body{
     width: 100%;
     overflow-x: hidden;
     min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
 .html{
     width: 100%;
@@ -62,9 +64,9 @@ body{
 .deco_logo{
     position: relative;
     display: flex;
-    gap: 2px;
-    top: 10px;
-    left: 35px;
+    gap: 4px;
+    top: 9px;
+    left: 40px;
 }
 .logo{
     margin-top: 20px;
@@ -79,10 +81,10 @@ body{
     border-radius: 100%;
     background-color: #F77E23;
     width: 4px;
-    padding: 2.5px;
+    padding: 2px;
     z-index: 3;
 }
-img{
+.head img{
    object-position: center 0.001px;
    position: absolute;
    z-index: -1;
@@ -385,7 +387,7 @@ main{
 .main_contents{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
     flex-wrap: wrap;
 }
 .content_m1{
@@ -484,13 +486,15 @@ main{
 }
 /*----------------------------Content_m2----------------------- */
 .content_m2{
-    background-color: rgb(242, 233, 222);
+    background-image: url(./img/second-background.png);
     padding: 50px 40px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 70px;
+    gap: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .right_side{
     position: relative;
@@ -499,7 +503,7 @@ main{
     gap: 40px;
 }
 .right_side h1{
-    line-height: 52px;
+    line-height: 60px;
     font-size: 50px;
     font-weight: 600;
 }
@@ -515,22 +519,18 @@ main{
     position: relative;
 }
 .circular_img{
-    margin-left: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 400px;
-    height: 400px;
-    border: 3.8px dashed #F77E23;
+    width: 500px;
+    height: 500px;
     border-radius: 100%;
     overflow: hidden;
 
 }
 .circular_img img{
-    left: -164px;
-    width: 500px;
-    height: 400px;
+    height: 500px;
     object-fit: cover;
 }
 .enroll_button{
@@ -556,10 +556,10 @@ main{
     gap: 15px;
     position: absolute;
     z-index: 4;
-    left: 425px;
-    top: 170px;
+    left: 400px;
+    top: 250px;
     width: 125px;
-    height: 160px;
+    height: 165px;
     background-color: white;
     border-radius: 5px;
 }
@@ -604,8 +604,8 @@ main{
         margin-left: 0px;
     }
     .Instructor_blox{
-        left:330px;
-        top: 176px;
+        left:400px;
+        top: 290px;
         width: 115px;
         height: 160px;
     }
@@ -632,7 +632,7 @@ main{
         height: 330px;
     }
     .circular_img img{
-        left:-195px;
+        height: 350px;
     }
     .Instructor_blox{
         left: 242px;
@@ -647,9 +647,38 @@ main{
     
 }
 /* -----------content_m3--------------- */
+
+.content_m3{
+    padding: 0 200px;
+    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .content_m3 h1{
     text-align: center;
     font-size: 40px;
     font-weight: 600;
     letter-spacing: 2px;
+    line-height: 50px;
+}
+.sortBy-button{
+    position: relative;
+    left: 0;
+    width: 130px;
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 550;
+    background-color: #F77E23;
+}
+.div-sortBy{
+    width: 100%;
+    display: flex;
+    justify-content: right;
 }
