@@ -651,6 +651,7 @@ main{
 /* -----------content_m3--------------- */
 
 .content_m3{
+    width: 100%;
     position: relative;
     padding: 50px 40px;
     height: 100vh;
