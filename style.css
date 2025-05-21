@@ -688,7 +688,7 @@ main{
     display: flex;
     flex-direction: column;
     background-color: transparent;
-    gap: 10px;
+    gap: 5px;
 }
 .item-content-m3 img{
     position: relative;
@@ -699,10 +699,12 @@ main{
 .middle-item-m3{
     display: flex;
     justify-content:space-around;
+    gap: 40px;
     align-items: center;
 }
 .middle-item-m3 h2 {
-    font-weight: 600px;
+    font-size: 20px;
+    line-height: 27px;
     color: #333333;
 }
 .last-item-m3{
@@ -732,3 +734,10 @@ main{
     flex-wrap: wrap;
     gap: 20px;
 }
+@media (max-width: 900px) {
+    .item-content-m3 img{
+        width: 315px;
+        height: 160px;
+    }    
+}
+
