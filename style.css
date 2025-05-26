@@ -725,7 +725,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 @media (max-width: 900px) {
   .item-content-m3 img {
@@ -776,7 +776,8 @@ main {
         margin-top: -10px;
     }
     .left-last-item-m3{
-        gap: 0px;
+      font-size: 12px;
+        gap: 2px;
     }
     .last-item-m3 h1 {
         font-size: 14px;
@@ -788,6 +789,16 @@ main {
     .div-sortBy{
         width: 93%;
     }
+    .main-content-m3{
+      gap: 10px;
+    }
+    .icon-m3{
+      font-size: 12px;
+    }
+    .middle-item-m3 div{
+      font-size: 14px;
+    }
+
 
 
 }
