@@ -769,10 +769,11 @@ main {
     }
     .middle-item-m3 h2 {
         font-size: 12px;
-        line-height: 20px;
+        line-height: 15px;
     }
     .last-item-m3{
         font-size: 14px;
+        margin-top: -10px;
     }
     .left-last-item-m3{
         gap: 0px;
